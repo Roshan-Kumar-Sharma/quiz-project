@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: grey;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+#heading-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: thistle;
+  border: 1px solid black;
+}
+
+#heading-text{
+  /* border: 1px solid salmon; */
+  width: fit-content;
+  margin: 50px auto;
+}
+
+#main-container{
+  margin: 0;
+  padding: 0;
+  display: none;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  width: inherit;
+  height: fit-content;
+  
+}
+
+/* #content::-webkit-scrollbar{
+  display: none;
+} */
+
+#ques-ans-container{
+  width: 700px;
+  height: fit-content;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+#button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: orchid;
+  border: 1px solid black;
+}
+
+#button-container button{
+  margin : 10px 0 5px 5px;
+  font-weight: bold;
+}
+
+#ques-numbers-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 200px;
+  height: inherit;
+  /* border: 1px solid blue; */
+  background-color: khaki;
+}
+
+.circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 5px;
+  width: 50px;
+  padding: 10px;
+  /* border: 1px solid black; */
+  border-radius: 40%;
+  cursor: pointer;
+  background-color: rgb(180, 180, 67);
+  font-weight: bold;
+}
+
+#question-section {
+  word-wrap:break-word;
+  font-size: 2em;
+  font-weight: bold;
+  width: 700px;
+  /* border: 1px solid yellow; */
+  padding: 10px;
+  background-color: turquoise;
+  border: 1px solid black;
+}
+
+/* #question-section::-webkit-scrollbar{
+  display: none;
+} */
+
+
+#my-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: inherit;
+  /* border: 1px solid yellow; */
+  padding: 10px ;
+  background-color: #ff634787;
+  border: 1px solid black;
+}
+
+#correct-ans{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blueviolet; */
+  width: 100px;
+  height: 100px;
+}
+
+.choice{
+  margin: 0 0 10px 0;
+  border: 1px solid navajowhite;
+  border-radius: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.label{
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
